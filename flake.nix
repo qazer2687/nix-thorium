@@ -6,13 +6,14 @@
     nixpkgs,
     ...
   }: {
+    ##### aarch64-linux #####
     packages.aarch64-linux = {
       thorium = let
         pkgs = import nixpkgs {system = "aarch64-linux";};
         pname = "thorium";
-        version = "130.0.6723.174";
+        version = "128.0.6613.194";
         src = pkgs.fetchurl {
-          url = "https://github.com/Alex313031/Thorium-Raspi/releases/download/M130.0.6723.174/Thorium_Browser_130.0.6723.174_arm64.AppImage";
+          url = "https://github.com/Alex313031/Thorium-Raspi/releases/download/M128.0.6613.194/Thorium_Browser_128.0.6613.194_arm64.AppImage";
           sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
         };
         appimageContents = pkgs.appimageTools.extractType2 {
