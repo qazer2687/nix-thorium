@@ -6,7 +6,6 @@
     nixpkgs,
     ...
   }: {
-    ##### aarch64-linux #####
     packages.aarch64-linux = {
       thorium = let
         pkgs = import nixpkgs {system = "aarch64-linux";};
