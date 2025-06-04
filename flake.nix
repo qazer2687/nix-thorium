@@ -14,7 +14,7 @@
         version = "128.0.6613.194";
         src = pkgs.fetchurl {
           url = "https://github.com/Alex313031/Thorium-Raspi/releases/download/M128.0.6613.194/Thorium_Browser_128.0.6613.194_arm64.AppImage";
-          sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+          sha256 = "sha256-eSPr0Shp9Mn9HlySlRu6hxtvqbNfKzsot5DX18L3Kg8=";
         };
         appimageContents = pkgs.appimageTools.extractType2 {
           inherit pname version src;
